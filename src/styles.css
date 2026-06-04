@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: #0c0c0c;
+  font-family: "Kanit", system-ui, sans-serif;
+}
+
+body {
+  overflow-x: clip;
+  color: #d7e2ea;
+}
+
+button,
+a {
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  overflow-x: clip;
+  background: #0c0c0c;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass {
+  border: 1px solid rgba(215, 226, 234, 0.12);
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow: 0 22px 80px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+}
+
+.thin-grid {
+  background-image:
+    linear-gradient(rgba(215, 226, 234, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 226, 234, 0.045) 1px, transparent 1px);
+  background-size: 58px 58px;
+}
+
+.scrollbar-soft::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar-soft::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.5);
+}
+
+object {
+  color-scheme: light;
+}
+
+@media (max-width: 767px) {
+  .disable-mobile-magnet {
+    transform: none !important;
+  }
+}
